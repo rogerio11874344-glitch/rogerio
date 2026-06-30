@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Baile Funk e Cultura Urbana - Informações Completas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0d0d0d;
+      color:white;
+      line-height:1.7;
+    }
+
+    header{
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+      url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero{
+      max-width:900px;
+    }
+
+    .hero h1{
+      font-size:70px;
+      margin-bottom:20px;
+      color:#00ff88;
+      text-shadow:0 0 20px #00ff88;
+    }
+
+    .hero p{
+      font-size:22px;
+      color:#ddd;
+    }
+
+    nav{
+      width:100%;
+      position:fixed;
+      top:0;
+      left:0;
+      padding:20px 50px;
+      background:rgba(0,0,0,0.85);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+      backdrop-filter:blur(10px);
+    }
+
+    nav h2{
+      color:#00ff88;
+      font-size:28px;
+    }
+
+    .home-btn{display:inline-flex;width:42px;height:42px;align-items:center;justify-content:center;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:12px;color:#fff;text-decoration:none;transition:0.2s ease;margin-left:20px;}
+    .home-btn:hover{background:rgba(255,255,255,0.16);transform:translateY(-1px);}
+
+    /* Estilos para abas */
+    .tabs-container{
+      padding:100px 10% 40px;
+    }
+
+    .tabs-header{
+      display:flex;
+      gap:10px;
+      border-bottom:2px solid #222;
+      margin-bottom:40px;
+      overflow-x:auto;
+      padding-bottom:15px;
+    }
+
+    .tab-btn{
+      background:transparent;
+      border:none;
+      color:#ddd;
+      padding:10px 20px;
+      cursor:pointer;
+      font-weight:bold;
+      transition:all 0.3s ease;
+      border-bottom:3px solid transparent;
+      font-size:16px;
+      white-space:nowrap;
+    }
+
+    .tab-btn:hover{
+      color:#00ff88;
+      background:rgba(0,255,136,0.08);
+    }
+
+    .tab-btn.active{
+      color:#00ff88;
+      border-bottom-color:#00ff88;
+      background:rgba(0,255,136,0.1);
+    }
+
+    .tab-content{
+      display:none;
+    }
+
+    .tab-content.active{
+      display:block;
+      animation:fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0;}
+      to{opacity:1;}
+    }
+
+
+    section{
+      padding:100px 10%;
+    }
+
+    .titulo{
+      font-size:42px;
+      margin-bottom:30px;
+      color:#00ff88;
+      border-left:6px solid #00ff88;
+      padding-left:15px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+      margin-top:40px;
+    }
+
+    .card{
+      background:#171717;
+      padding:30px;
+      border-radius:20px;
+      transition:0.4s;
+      border:1px solid #222;
+      box-shadow:0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border:1px solid #00ff88;
+      box-shadow:0 0 25px rgba(0,255,136,0.3);
+    }
+
+    .card h3{
+      color:#00ff88;
+      margin-bottom:15px;
+      font-size:26px;
+    }
+
+    .card p{
+      color:#ccc;
+    }
+
+    .table-wrapper{
+      overflow-x:auto;
+      margin-top:30px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      background:#131313;
+      margin-top:20px;
+    }
+
+    th, td{
+      padding:16px 18px;
+      border:1px solid #222;
+      text-align:left;
+      color:#ddd;
+    }
+
+    th{
+      background:#111;
+      color:#00ff88;
+      font-weight:700;
+    }
+
+    tr:nth-child(even){
+      background:rgba(255,255,255,0.03);
+    }
+
+    .imagem{
+      width:100%;
+      border-radius:20px;
+      margin-top:40px;
+      box-shadow:0 0 30px rgba(0,0,0,0.5);
+    }
+
+    .lista{
+      margin-top:25px;
+    }
+
+    .lista li{
+      margin-bottom:15px;
+      color:#ddd;
+    }
+
+    footer{
+      background:#050505;
+      padding:40px;
+      text-align:center;
+      color:#777;
+      border-top:1px solid #222;
+    }
+
+    .destaque{
+      color:#00ff88;
+      font-weight:bold;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:45px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      nav{
+        padding:15px 20px;
+      }
+
+      nav ul{
+        display:none;
+      }
+
+      section{
+        padding:80px 7%;
+      }
+
+    }
+
+    .footer-actions{
+      margin-top:16px;
+    }
+
+    .insta-btn{
+      display:inline-block;
+      background:#00ff88;
+      color:#050505;
+      padding:10px 16px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.15s;
+      margin-top:10px;
+    }
+
+    .insta-btn:hover{
+      transform:translateY(-2px);
+      opacity:0.95;
+    }
+
+    /* Botão profissional para reportagens/alertas */
+    .report-btn{
+      display:inline-block;
+      background:#f6c84c;
+      color:#111;
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+      transition:transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow:0 8px 20px rgba(0,0,0,0.22);
+      border:1px solid rgba(0,0,0,0.06);
+    }
+
+    .report-btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 12px 28px rgba(0,0,0,0.28);
+    }
+
+    .dance-btn{
+      display:inline-block;
+      background:#ff3b3b;
+      color:white;
+      padding:10px 14px;
+      border-radius:8px;
+      border:none;
+      cursor:pointer;
+      font-weight:bold;
+      margin-left:12px;
+    }
+
+    .dance-overlay{
+      position:fixed;
+      inset:0;
+      background:
+        linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+        url('https://images.unsplash.com/photo-1533125074856-7a5c0d9f9d7b?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:2000;
+      padding:30px;
+      box-sizing:border-box;
+      cursor:pointer;
+    }
+
+    .dance-stage{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items:flex-end;
+      max-width:1000px;
+      transform:translateY(10px);
+    }
+
+    .dancer{
+      font-size:56px;
+      animation: dance 900ms infinite ease-in-out alternate;
+      filter:drop-shadow(0 6px 10px rgba(0,0,0,0.6));
+      transform-origin:50% 100%;
+      display:inline-block;
+    }
+
+    .dance-stage .dancer:nth-child(1){font-size:72px; transform:translateY(0) rotate(-6deg); animation-delay:0s}
+    .dance-stage .dancer:nth-child(2){font-size:56px; transform:translateY(0) rotate(4deg); animation-delay:0.06s}
+    .dance-stage .dancer:nth-child(3){font-size:48px; transform:translateY(0) rotate(-4deg); animation-delay:0.12s}
+    .dance-stage .dancer:nth-child(4){font-size:64px; transform:translateY(0) rotate(2deg); animation-delay:0.18s}
+    .dance-stage .dancer:nth-child(5){font-size:50px; transform:translateY(0) rotate(-2deg); animation-delay:0.24s}
+    .dance-stage .dancer:nth-child(6){font-size:58px; transform:translateY(0) rotate(6deg); animation-delay:0.30s}
+    .dance-stage .dancer:nth-child(7){font-size:46px; transform:translateY(0) rotate(-8deg); animation-delay:0.36s}
+    .dance-stage .dancer:nth-child(8){font-size:60px; transform:translateY(0) rotate(3deg); animation-delay:0.42s}
+    .dance-stage .dancer:nth-child(9){font-size:52px; transform:translateY(0) rotate(-3deg); animation-delay:0.48s}
+    .dance-stage .dancer:nth-child(10){font-size:68px; transform:translateY(0) rotate(5deg); animation-delay:0.54s}
+
+    @keyframes dance{
+      from{transform:translateY(0) rotate(-4deg) scale(1)}
+      to{transform:translateY(-26px) rotate(8deg) scale(1.12)}
+    }
+
+    .close-dance{
+      position:absolute;
+      right:20px;
+      top:18px;
+      background:transparent;
+      color:#fff;
+      border:2px solid rgba(255,255,255,0.15);
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      font-size:22px;
+      cursor:pointer;
+    }
+
+    /* botão de som removido — overlay com apenas NPCs */
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>BAILE FUNK</h2>
+    <a class="home-btn" href="index.html" aria-label="Página Inicial">🏠</a>
+  </nav>
+
+  <header>
+    <div class="hero">
+
+      <h1>Baile Funk & Cultura Urbana</h1>
+
+      <p>
+        Conheça a realidade dos bailes funk, fluxos de rua,
+        impactos sociais, cultura periférica, economia local
+        e os desafios enfrentados pelas comunidades urbanas.
+      </p>
+      <p>
+        Aqui você vai encontrar também como o funk se transforma
+        em resistência cultural, como os bailes são organizados
+        nas periferias e de que forma essa cultura dialoga com a cidade.
+      </p>
+
+    </div>
+
+  </header>
+
+  <section id="cultura">
+
+    <h2 class="titulo">Cultura e Identidade</h2>
+
+    <p>
+      O baile funk representa uma importante manifestação cultural
+      das periferias brasileiras. Mais do que música, ele funciona
+      como espaço de socialização, dança, expressão artística e
+      fortalecimento da identidade da juventude negra e periférica.
+    </p>
+
+    <p>
+      Nos bailes, jovens e famílias se reúnem para celebrar suas raízes,
+      trocar referências de moda, gírias e atitude, e fortalecer
+      a sensação de pertencimento a uma comunidade.
+    </p>
+
+    <p>
+      O movimento também cria oportunidades para DJs, MCs, produtores,
+      dançarinos e empreendedores locais, tornando o baile um centro
+      de criatividade e trabalho cultural.
+    </p>
+
+    <img class="imagem"
+    src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=1600&auto=format&fit=crop">
+
+  </section>
+
+  <section id="copao">
+
+    <h2 class="titulo">O Fenômeno do Copão de 10</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Popularização</h3>
+
+        <p>
+          O “copão de 10” se tornou tendência nos fluxos e redes sociais,
+          oferecendo bebidas grandes e baratas para o público jovem.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Economia Popular</h3>
+
+        <p>
+          Ambulantes, adegas e comerciantes movimentam a economia local,
+          gerando renda em regiões periféricas.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Riscos</h3>
+
+        <p>
+          O excesso de álcool pode causar intoxicação, acidentes,
+          perda de reflexos e problemas graves de saúde.
+        </p>
+      </div>
+
+    </div>
+
+    <p>
+      O copão é parte do universo dos bailes e fluxos, onde a bebida
+      ganha significado social como símbolo de celebração e descontração.
+      Mas também revela dilemas sobre consumo responsável e convivência.
+    </p>
+
+  </section>
+
+  <section id="problemas">
+
+    <h2 class="titulo">Problemas e Desafios</h2>
+
+    <ul class="lista">
+
+      <li>
+        <span class="destaque">Poluição sonora:</span>
+        música alta durante a madrugada afeta moradores.
+      </li>
+
+      <li>
+        <span class="destaque">Interdição de ruas:</span>
+        carros e multidões bloqueiam o trânsito.
+      </li>
+
+      <li>
+        <span class="destaque">Violência:</span>
+        conflitos e brigas podem ocorrer devido ao excesso de álcool.
+      </li>
+
+      <li>
+        <span class="destaque">Danos urbanos:</span>
+        lixo acumulado e garrafas quebradas aumentam a tensão.
+      </li>
+
+      <li>
+        <span class="destaque">Fiscalização:</span>
+        apreensão de bebidas falsificadas e comércio irregular.
+      </li>
+
+    </ul>
+
+    <p>
+      Esses problemas revelam também a falta de espaços adequados e políticas
+      públicas que valorizem a cultura do funk, em vez de criminalizar apenas
+      as manifestações dos jovens das periferias.
+    </p>
+
+  </section>
+
+  <section id="positivos">
+
+    <h2 class="titulo">Pontos Positivos</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Lazer Acessível</h3>
+
+        <p>
+          Muitos jovens encontram nos bailes uma forma barata
+          de diversão e convivência social.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Movimento Cultural</h3>
+
+        <p>
+          O funk fortalece artistas independentes,
+          DJs, dançarinos e produtores locais.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Economia</h3>
+
+        <p>
+          Adegas, ambulantes e pequenos comércios
+          dependem financeiramente desses eventos.
+        </p>
+      </div>
+
+    </div>
+
+    <p>
+      Os bailes também são espaços de empoderamento cultural, onde
+      a juventude cria linguagem própria, visibilidade e se organiza
+      para transformar sua realidade.
+    </p>
+
+  </section>
+
+  <section>
+
+    <h2 class="titulo">Como Evitar Conflitos</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Segurança</h3>
+
+        <p>
+          Reforço de segurança e organização das entradas.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Atendimento Médico</h3>
+
+        <p>
+          Presença de ambulâncias e equipes médicas.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Saída Organizada</h3>
+
+        <p>
+          Controle do fluxo de pessoas ao final dos eventos.
+        </p>
+      </div>
+
+    </div>
+
+    <p>
+      A convivência melhora quando há diálogo entre organizadores,
+      moradores e autoridades, com regras claras de som, limpeza e horários.
+    </p>
+
+  </section>
+
+  <section id="opiniao">
+
+    <h2 class="titulo">Visões Sobre os Bailes Funk</h2>
+
+    <p style="margin-bottom:40px;">
+      Os bailes funk dividem opiniões na sociedade brasileira.
+      Enquanto artistas e produtores enxergam o movimento como
+      cultura, resistência e geração de renda, moradores de regiões
+      afetadas relatam problemas relacionados ao barulho,
+      segurança e ocupação das ruas.
+    </p>
+
+    <p style="margin-bottom:40px;">
+      Essa tensão mostra que os bailes são ao mesmo tempo
+      potência cultural e ponto de conflito urbano, exigindo
+      compreensão sobre as raízes sociais do movimento.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>Artistas e Defensores</h3>
+
+        <p>
+          Para MCs, DJs e produtores culturais, o funk representa
+          uma das maiores expressões culturais das periferias brasileiras.
+        </p>
+
+        <br>
+
+        <p>
+          O movimento é visto como:
+        </p>
+
+        <ul class="lista">
+
+          <li>✔ Expressão artística e identidade periférica</li>
+
+          <li>✔ Resistência cultural e social</li>
+
+          <li>✔ Geração de renda para milhares de famílias</li>
+
+          <li>✔ Inclusão social e oportunidade para jovens</li>
+
+          <li>✔ Fortalecimento da cultura negra urbana</li>
+
+        </ul>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Moradores e Vizinhança</h3>
+
+        <p>
+          Já muitos moradores relatam dificuldades causadas
+          pelos chamados “fluxos” e pancadões.
+        </p>
+
+        <br>
+
+        <p>
+          As principais reclamações incluem:
+        </p>
+
+        <ul class="lista">
+
+          <li>⚠ Som alto durante toda a madrugada</li>
+
+          <li>⚠ Bloqueio de ruas e trânsito</li>
+
+          <li>⚠ Acúmulo de lixo e garrafas</li>
+
+          <li>⚠ Brigas e sensação de insegurança</li>
+
+          <li>⚠ Dificuldade para descansar e dormir</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="debate">
+
+    <h2 class="titulo">Debates e Fiscalização</h2>
+
+    <p>
+      Os debates sobre o <span class="destaque">baile funk</span> giram em torno da tensão entre a <span class="destaque">expressão cultural</span> e a <span class="destaque">ordem pública</span>. Enquanto defensores destacam o funk como um espaço de sociabilidade e resistência para a juventude periférica, críticos apontam problemas como a perturbação do sossego, a ocupação desordenada de vias públicas e o histórico de repressão policial.
+    </p>
+
+    <h3 style="color:#00ff88; margin-top:40px; margin-bottom:20px;">Cultura e Resistência Social</h3>
+
+    <ul class="lista">
+      <li>
+        <span class="destaque">Direito ao Lazer:</span> Pesquisadores e defensores afirmam que os bailes são uma forma legítima de apropriação do espaço urbano por moradores de periferias e favelas, onde o acesso ao lazer estruturado pelo poder público é historicamente escasso.
+      </li>
+
+      <li>
+        <span class="destaque">Identidade Coletiva:</span> Longe de ser apenas música, o movimento fortalece vínculos comunitários e atua como uma crônica social, com letras que relatam a realidade cotidiana, as desigualdades e as vivências locais.
+      </li>
+
+      <li>
+        <span class="destaque">Movimento Econômico:</span> Os bailes fomentam o comércio informal local, gerando trabalho e renda para moradores que organizam os eventos ou vendem produtos e serviços no entorno.
+      </li>
+    </ul>
+
+    <h3 style="color:#00ff88; margin-top:40px; margin-bottom:20px;">Ordem Pública e Conflitos</h3>
+
+    <ul class="lista">
+      <li>
+        <span class="destaque">Perturbação do Sossego:</span> Um dos debates mais fortes ocorre entre os próprios moradores das comunidades. Muitos se queixam do volume excessivo, do lixo deixado nas ruas e da duração dos eventos até o amanhecer, o que prejudica o descanso e a rotina de trabalho.
+      </li>
+
+      <li>
+        <span class="destaque">Intervenções Criminais:</span> Há registros de envolvimento ou controle de bailes por facções criminosas e o tráfico local, que por vezes utilizam os eventos para lavar dinheiro ou atrair público, o que atrai operações policiais e aumenta o risco de confrontos.
+      </li>
+
+      <li>
+        <span class="destaque">Violência e Segurança:</span> Operações policiais de repressão aos chamados "pancadões" geram forte debate sobre o uso da força e a criminalização da juventude periférica, culminando frequentemente em confrontos violentos.
+      </li>
+    </ul>
+
+    <p style="margin-top:40px;">
+      Debater as visões sobre o funk é essencial para promover
+      respeito, reduzir preconceitos e construir políticas que
+      valorizem a cultura sem ignorar a convivência urbana.
+    </p>
+
+  </section>
+
+  <section id="debate">
+
+    <h2 class="titulo">Debates e Fiscalização</h2>
+
+    <p>
+      A discussão sobre os bailes funk frequentemente aparece
+      em debates públicos, audiências e comissões legislativas,
+      como a CPI dos Pancadões em São Paulo.
+    </p>
+
+    <br>
+
+    <p>
+      O principal desafio é encontrar equilíbrio entre:
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Direito ao Lazer</h3>
+
+        <p>
+          Garantir espaços culturais e de diversão
+          para a juventude periférica.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Direito ao Sossego</h3>
+
+        <p>
+          Preservar o descanso e a qualidade de vida
+          dos moradores das regiões afetadas.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Regulação</h3>
+
+        <p>
+          Criar soluções com fiscalização,
+          segurança e espaços apropriados para eventos.
+        </p>
+      </div>
+
+    </div>
+
+    <p>
+      Esses debates devem incluir a comunidade funk, agentes culturais
+      e autoridades para construir normas que permitam festas
+      mais seguras e respeitosas.
+    </p>
+
+  </section>
+
+  <footer>
+
+    <p>
+      Site desenvolvido sobre a cultura dos bailes funk,
+      seus impactos sociais, culturais e urbanos.
+    </p>
+
+    <p style="margin-top:12px;font-size:14px;color:#999;">
+      Criado por: — Instagram: @rogerio_cstta
+    </p>
+
+    <div class="footer-actions">
+      <a href="https://www.instagram.com/rogerio_cstta" onclick="openInstagram(); return false;" class="insta-btn">Abrir no Instagram</a>
+    </div>
+
+  </footer>
+
+  <script>
+    function openInstagram() {
+      var appUrl = 'instagram://user?username=rogerio_cstta';
+      var webUrl = 'https://www.instagram.com/rogerio_cstta';
+      window.location = appUrl;
+      setTimeout(function(){ window.location = webUrl; }, 700);
+    }
+
+
+  </script>
+
+</body>
+</html>
+
+<section>
+  <p>
+    O baile funk é uma das maiores expressões da cultura popular e da juventude periférica no Brasil.
+    Muito mais do que festas, esses eventos funcionam como espaços de resistência, geram renda,
+    ditam moda e comportamento, e servem como principal opção de lazer em comunidades vulneráveis.
+  </p>
+</section>
+
+<section>
+  <h2>Origem e Importância Cultural</h2>
+
+  <div class="card">
+    <h3>Raízes</h3>
+    <p>
+      O funk tem origem nos Estados Unidos nos anos 60, mas adaptou-se no Brasil a partir dos
+      bailes de soul music cariocas, tornando-se um fenômeno de massas.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Identidade Periférica</h3>
+    <p>
+      Nos bailes, os jovens constroem uma identidade de grupo e encontram um refúgio para
+      expressar sua realidade, desejos e frustrações.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Reconhecimento Oficial</h3>
+    <p>
+      O movimento já é debatido como manifestação cultural protegida e reconhecido pela
+      Câmara dos Deputados.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Impacto Visual</h3>
+    <p>
+      A cultura dita tendências nacionais, desde gírias até a estética "mandrake",
+      que se espalha para além das capitais.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Dinâmica e Desafios Urbanos</h2>
+
+  <ul>
+    <li><strong>Fluxos:</strong> festas democráticas, gratuitas ou de baixo custo, organizadas nas ruas.</li>
+    <li><strong>Conflitos de Espaço:</strong> tensões com moradores devido ao barulho, aglomerações e lixo.</li>
+    <li><strong>Preconceito:</strong> o funk ainda enfrenta criminalização e preconceito estrutural.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Aprofunde-se no Tema</h2>
+  <p>
+    Compreender os bailes funk é analisar a própria dinâmica das cidades brasileiras,
+    seus contrastes e sua sociologia.
+  </p>
+
+  <p>
+    Para entender mais sobre a importância dos bailes na construção da cidadania e da
+    identidade urbana, consulte artigos acadêmicos e reportagens especializadas.
+  </p>
+</section>
+
+<header>
+  <h1>🍹 O que é a bebida Copão?</h1>
+  <p>
+    A expressão "copão" refere-se a uma tendência cultural e gastronômica
+    de consumir drinks alcoólicos em copos grandes, geralmente entre
+    500 ml e 700 ml.
+  </p>
+</header>
+
+<section class="card">
+  <h2>📌 Características</h2>
+  <p>
+    O preparo é muito popular em festas, adegas, churrascos e bailes,
+    destacando-se pelo uso de gelo saborizado e combinações criativas
+    de bebidas.
+  </p>
+</section>
+
+<section class="card">
+  <h2>🥤 Como é feito um Copão?</h2>
+
+  <div class="item">
+    <h3>🧊 Gelo Saborizado</h3>
+    <p>
+      O grande diferencial da bebida. Podem ser usados cubos congelados
+      de água de coco, frutas, sucos ou energéticos.
+    </p>
+  </div>
+
+  <div class="item">
+    <h3>🥃 Base Alcoólica</h3>
+    <p>
+      Normalmente leva gin, uísque, vodca, rum ou bebidas como Jurupinga.
+    </p>
+  </div>
+
+  <div class="item">
+    <h3>🍊 Complementos</h3>
+    <p>
+      Refrigerantes, energéticos e sucos são adicionados para completar
+      o volume do copo e realçar o sabor.
+    </p>
+  </div>
+</section>
+
+<section class="card">
+  <h2>⭐ Variações Populares</h2>
+
+  <ul>
+    <li>
+      <strong>Copão de Uísque:</strong>
+      Uísque, energético e gelo de água de coco.
+    </li>
+
+    <li>
+      <strong>Copão de Gin:</strong>
+      Gin saborizado, energético de frutas e gelo de morango.
+    </li>
+
+    <li>
+      <strong>Jurupinga com Suco:</strong>
+      Jurupinga, suco de uva integral e uvas congeladas.
+    </li>
+  </ul>
+</section>
+
+<footer>
+  <p>
+    🍹 O copão tornou-se um fenômeno cultural em festas e eventos,
+    combinando sabor, criatividade e personalização.
+  </p>
+</footer>
+
+<div class="item">
+  <h3>🔊 Barulho e Insônia</h3>
+  <p>
+    O volume excessivo dos chamados "fluxos" invade as madrugadas e
+    interfere no descanso de trabalhadores, idosos e estudantes.
+  </p>
+</div>
+
+<div class="item">
+  <h3>🚧 Bloqueio de Vias e Sujeira</h3>
+  <p>
+    A aglomeração pode dificultar o trânsito, o acesso de ambulâncias
+    e gerar acúmulo de lixo nas vias públicas.
+  </p>
+</div>
+<div class="item">
+  <h3>👮 Choques com a Polícia</h3>
+  <p>
+    Operações para dispersar bailes podem gerar confrontos,
+    debates sobre uso da força e impactos para moradores e frequentadores.
+  </p>
+</div>
+
+<div class="item">
+  <h3>⚠️ Aglomerações e Riscos</h3>
+  <p>
+    Eventos sem estrutura adequada podem aumentar riscos de acidentes,
+    tumultos e problemas de segurança.
+  </p>
+</div>
+<div class="item">
+  <h3>🚨 Envolvimento do Tráfico</h3>
+  <p>
+    Algumas investigações apontam que determinados eventos podem ser
+    utilizados por grupos criminosos para atividades ilícitas.
+  </p>
+</div>
+
+<div class="item">
+  <h3>🎤 Debate sobre Letras</h3>
+  <p>
+    Certas músicas geram controvérsias por abordarem temas relacionados
+    à violência, drogas e criminalidade.
+  </p>
+</div>
+<div class="item">
+  <h3>🏘️ Estigma Social</h3>
+  <p>
+    O funk frequentemente enfrenta preconceitos e debates sobre seu
+    reconhecimento como manifestação cultural.
+  </p>
+</div>
+
+<div class="item">
+  <h3>🎭 Ausência de Espaços Adequados</h3>
+  <p>
+    Muitas comunidades possuem poucas opções de lazer, o que contribui
+    para a realização de eventos em vias públicas.
+  </p>
+</div>
+
+<div class="card">
+  <h2>🤝 Inclusão e Acessibilidade</h2>
+  <p>
+    Os bailes são eventos democráticos, geralmente gratuitos ou de baixo custo,
+    permitindo o acesso ao lazer para populações que muitas vezes possuem
+    poucas opções de entretenimento.
+  </p>
+</div>
+
+<div class="card">
+  <h2>💰 Fomento à Economia Local</h2>
+  <p>
+    As festas geram renda para vendedores ambulantes, comerciantes,
+    motoristas, seguranças e diversos prestadores de serviço da comunidade.
+  </p>
+</div>
+
+<div class="card">
+  <h2>🏘️ Cultura e Identidade</h2>
+  <p>
+    O funk representa uma importante forma de expressão da juventude periférica,
+    fortalecendo a autoestima e a construção de identidades culturais próprias.
+  </p>
+</div>
+
+<div class="card">
+  <h2>🎤 Incentivo Profissional</h2>
+  <p>
+    O movimento revela MCs, DJs, dançarinos e produtores culturais,
+    criando oportunidades profissionais e novas perspectivas de vida.
+  </p>
+</div>
+
+<div class="card">
+  <h2>❤️ Rede de Apoio Comunitária</h2>
+  <p>
+    Os bailes funcionam como espaços de encontro e socialização,
+    fortalecendo os laços entre moradores e promovendo união dentro das comunidades.
+  </p>
+</div>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prevenção de Conflitos em Bailes Funk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>🎵 Como Evitar Conflitos em Bailes Funk</h1>
+    <p>
+      A convivência harmoniosa em eventos culturais depende do respeito,
+      da responsabilidade coletiva e do diálogo entre participantes,
+      organizadores e comunidade.
+    </p>
+  </header>
+
+  <section class="section">
+    <h2>🤝 Dicas de Convivência e Segurança</h2>
+
+    <div class="card">
+      <h3>🏠 Respeito aos Espaços e Moradores</h3>
+      <p>
+        Mantenha as vias de acesso livres, não bloqueie portões,
+        preserve os espaços públicos e descarte o lixo corretamente.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💬 Diálogo Antes do Confronto</h3>
+      <p>
+        Pequenos desentendimentos podem ser resolvidos com educação,
+        respeito e comunicação tranquila.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🍹 Consumo Responsável de Álcool</h3>
+      <p>
+        Conhecer seus limites ajuda a evitar atitudes impulsivas,
+        discussões e situações de risco.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🙌 Respeito Mútuo</h3>
+      <p>
+        Toda interação deve ser baseada no consentimento e no respeito
+        ao espaço e às escolhas das outras pessoas.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🚶 Organização dos Espaços</h3>
+      <p>
+        Evite bloquear áreas de circulação e mantenha corredores livres
+        para pedestres, veículos de emergência e moradores.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🛡️ Canais de Ajuda e Prevenção</h2>
+
+    <div class="card">
+      <h3>🎤 Ações Comunitárias</h3>
+      <p>
+        Coletivos culturais, organizadores e moradores podem trabalhar
+        juntos para criar regras de convivência e reduzir conflitos.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📞 Segurança Pública e Mediação</h3>
+      <p>
+        Em situações de emergência, procure os canais oficiais de
+        atendimento do seu município ou estado.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Cultura, respeito e organização são elementos fundamentais para
+      garantir eventos mais seguros e positivos para todos.
+    </p>
+  </footer>
+
+</div>
+
+</body>
+</html>
